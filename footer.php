@@ -21,11 +21,6 @@
   <![endif]-->
 
 
-  <!-- yui profiler and profileviewer - remove for production -->
-  <script src="<?php bloginfo('stylesheet_directory'); ?>/js/profiling/yahoo-profiling.min.js?v=1"></script>
-  <script src="<?php bloginfo('stylesheet_directory'); ?>/js/profiling/config.js?v=1"></script>
-  <!-- end profiling code -->
-
 	<?php wp_footer(); ?>
 
   <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
