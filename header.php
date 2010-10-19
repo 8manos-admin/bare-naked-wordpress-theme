@@ -38,7 +38,14 @@
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="<?php bloginfo('stylesheet_directory'); ?>/js/modernizr-1.5.min.js"></script>
 
-	<?php wp_head(); ?>
+	<?php 
+		wp_enqueue_script( 'jquery' );
+		if ( is_singular() && get_option( 'thread_comments' ) )
+			wp_enqueue_script( 'comment-reply' );
+		
+		wp_head(); 
+		
+	?>
 </head>
 
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
