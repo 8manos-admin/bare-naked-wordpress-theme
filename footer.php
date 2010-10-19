@@ -1,5 +1,7 @@
     <footer>
-
+	<?php
+		dynamic_sidebar('footer');
+	?>
     </footer>
   </div> <!--! end of #container -->
 
@@ -27,9 +29,9 @@
 	<?php wp_footer(); ?>
 
   <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
-       change the UA-XXXXX-X to be your site's ID -->
+       change the UA-XXXXX-X to be your site's ID 
   <script>
-   var _gaq = [['_setAccount', 'UA-3660281-23'], ['_trackPageview']];
+   var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
    (function(d, t) {
     var g = d.createElement(t),
         s = d.getElementsByTagName(t)[0];
@@ -38,6 +40,7 @@
     s.parentNode.insertBefore(g, s);
    })(document, 'script');
   </script>
+  -->
   
 </body>
 </html>
